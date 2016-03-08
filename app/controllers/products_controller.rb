@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all(params[:q])
+    if params[:q]
+      @products = Product.all(params[:q])
+    end
   end
 end

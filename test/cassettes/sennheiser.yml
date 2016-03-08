@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.bestbuy.com/v1/products(longDescription=sennheiser*)?apiKey=r57cg7bzeza9xmw2ya3cp6ju&format=json&page=5&pageSize=15&show=sku,name,customerReviewAverage,shortDescription,salePrice,image
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-02.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '7136'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 17:54:52 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 61,
+          "to": 75,
+          "total": 131,
+          "currentPage": 5,
+          "totalPages": 9,
+          "queryTime": "0.015",
+          "totalTime": "0.054",
+          "partial": false,
+          "canonicalUrl": "/v1/products(longDescription=\"sennheiser*\")?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&page=5&format=json&apiKey=r57cg7bzeza9xmw2ya3cp6ju",
+          "products": [
+            {
+              "sku": 4434003,
+              "name": "Sennheiser - MOMENTUM Earbud Headphones - Black Chrome",
+              "customerReviewAverage": "5.0",
+              "shortDescription": "Stainless steel acoustic pipes; sound isolating; dynamic speaker system; 3-button in-line remote; in-line microphone; tangle-free cable; includes carrying case",
+              "salePrice": 99.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4434/4434003_sa.jpg"
+            },
+            {
+              "sku": 4433401,
+              "name": "Sennheiser - MOMENTUM Earbud Headphones - Black Chrome",
+              "customerReviewAverage": "4.6",
+              "shortDescription": "Proprietary transducer technology; sound isolation; noise cancellation; stainless steel acoustic pipes; 3-button in-line remote and microphone for Apple&#174; iOS devices; tangle-resistant cable",
+              "salePrice": 99.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4433/4433401_sa.jpg"
+            },
+            {
+              "sku": 9068301,
+              "name": "Sennheiser - MOMENTUM Earbud Headphones - Multi",
+              "customerReviewAverage": "4.4",
+              "shortDescription": "SENNHEISER MOMENTUM Earbud Headphones: Custom-machined stainless-steel acoustic pipe; dynamic speaker system; 3-button in-line remote with integrated microphone; 2-tone, elliptical cable; includes 4 sizes of ear adapters",
+              "salePrice": 99.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068301_sa.jpg"
+            },
+            {
+              "sku": 9068329,
+              "name": "Sennheiser - MOMENTUM Earbud Headphones - Multi",
+              "customerReviewAverage": "4.8",
+              "shortDescription": "SENNHEISER MOMENTUM Earbud Headphones: Ambient noise attenuation; dynamic transducers; custom-machined stainless-steel acoustic pipe; 3-button in-line remote with integrated omnidirectional microphone; 4 ear adapter sizes; 4.3' elliptical cable",
+              "salePrice": 99.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068329_sa.jpg"
+            },
+            {
+              "sku": 3427044,
+              "name": "Sennheiser - Over-the-Ear Accessory Headphones for RS-165 Headphone Systems - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "Sound isolating; dynamic drivers and neodymium magnets; up to 18 hours of use between charges",
+              "salePrice": 139.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427044_sa.jpg"
+            },
+            {
+              "sku": 3427035,
+              "name": "Sennheiser - Over-the-Ear Accessory Headphones for RS-175 Headphone Systems - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "Sound isolating; dynamic drivers and neodymium magnets; up to 18 hours of use between charges",
+              "salePrice": 169.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427035_sa.jpg"
+            },
+            {
+              "sku": 3427053,
+              "name": "Sennheiser - Over-the-Ear Accessory Headphones for RS-185 Headphone Systems - Black",
+              "customerReviewAverage": "2.0",
+              "shortDescription": "Dynamic open drivers and neodymium magnets; up to 18 hours of use between charges",
+              "salePrice": 199.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427053_sa.jpg"
+            },
+            {
+              "sku": 5660151,
+              "name": "Sennheiser - Over-the-Ear Gaming Headset - Black",
+              "customerReviewAverage": "1.0",
+              "shortDescription": "From our expanded online assortment; noise-canceling microphone; game and chat controls; open acoustic ear cups; sound isolating; 16mm drivers; neodymium magnets",
+              "salePrice": 59.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/5660/5660151_sa.jpg"
+            },
+            {
+              "sku": 3427026,
+              "name": "Sennheiser - Over-the-Ear Headphone System - Black",
+              "customerReviewAverage": "5.0",
+              "shortDescription": "Up to 98' wireless range; sound isolating; dynamic drivers with neodymium magnets; adjustable headband; includes multireceiver transmitter with support for up to 2 pair of headphones simultaneously",
+              "salePrice": 219.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427026_sa.jpg"
+            },
+            {
+              "sku": 4555900,
+              "name": "Sennheiser - Over-the-Ear Headphones - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; detachable cable with in-line remote and microphone; optimized for Android devices",
+              "salePrice": 109.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555900_sa.jpg"
+            },
+            {
+              "sku": 4555600,
+              "name": "Sennheiser - Over-the-Ear Headphones - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; in-line remote and microphone; optimized for Android devices",
+              "salePrice": 89.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555600_sa.jpg"
+            },
+            {
+              "sku": 4555700,
+              "name": "Sennheiser - Over-the-Ear Headphones - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; detachable cable with in-line remote and microphone; optimized for Apple&#174; iOS devices",
+              "salePrice": 109.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555700_sa.jpg"
+            },
+            {
+              "sku": 4555500,
+              "name": "Sennheiser - Over-the-Ear Headphones - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; in-line remote and microphone; optimized for Apple&#174; iOS devices",
+              "salePrice": 89.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555500_sa.jpg"
+            },
+            {
+              "sku": 1700568,
+              "name": "Sennheiser - Over-the-Ear Headphones - Brown",
+              "customerReviewAverage": "4.5",
+              "shortDescription": "From our expanded online assortment; E.A.R. technology; twist-n-lock cable; DuoFol diaphragms; neodymium ferrous magnets",
+              "salePrice": 153.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1700/1700568_sa.jpg"
+            },
+            {
+              "sku": 4315300,
+              "name": "Sennheiser - Over-the-Ear Headphones - Silver/Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Sound isolating; dynamic transducers; bass dial; integrated earcup controls; adjustable headband; microphone; folding design",
+              "salePrice": 499.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4315/4315300_sa.jpg"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 17:54:55 GMT
+recorded_with: VCR 3.0.1
