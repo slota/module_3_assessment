@@ -12,7 +12,7 @@ class Product
   def self.name_ready(name)
     name.split.map do |v|
       v + "*" + ","
-    end.join(" ")
+    end.join
   end
 
   def initialize(product)

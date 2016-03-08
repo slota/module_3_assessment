@@ -6,7 +6,7 @@ class BestBuyTest < ActiveSupport::TestCase
       products = Product.all("sennheiser")
       refute products.nil?
 
-      assert_equal products.count, 10
+      assert_equal products.count, 15
 
       assert_equal products.first.sku, 9678429
       assert_equal products.first.name, "Sennheiser - Camera-Mount Wireless Microphone System - Black"

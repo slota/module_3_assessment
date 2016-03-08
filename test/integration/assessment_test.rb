@@ -14,7 +14,7 @@ class AssessmentTest <  ActionDispatch::IntegrationTest
 
     assert_equal current_path, search_path
 
-    assert page.has_content?("Your search returned 10 products")
+    assert page.has_content?("Your search returned 15 products")
     assert page.has_content?("ID")
     assert page.has_content?("Name")
     assert page.has_content?("Description")

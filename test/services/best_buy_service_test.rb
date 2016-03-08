@@ -16,7 +16,7 @@ class BestBuyServiceTest < ActiveSupport::TestCase
       assert_equal products.first["salePrice"], 629.95
       assert_equal products.first["image"], "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678429_sa.jpg"
 
-      assert_equal products.count, 10
+      assert_equal products.count, 15
     end
   end
 end
