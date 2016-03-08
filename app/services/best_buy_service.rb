@@ -2,6 +2,7 @@ class BestBuyService
   attr_reader :connection
 
   def initialize(name)
+    binding.pry
     @connection = Faraday.new("http://api.bestbuy.com/v1/products(longDescription%20in(#{name}))")
   end
 
