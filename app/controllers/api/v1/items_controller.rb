@@ -18,7 +18,7 @@ class Api::V1::ItemsController < ApplicationController
     respond_with Item.update(name: params[:name], description: params[:description], image_url: params[:image_url])
   end
 
-  def delete
+  def destroy
     respond_with Item.delete(params[:id])
   end
 end
