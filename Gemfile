@@ -17,6 +17,7 @@ gem "responders"
 gem "launchy"
 gem "figaro"
 gem 'active_model_serializers'
+gem "faraday"
 
 group :development do
   gem "spring"
@@ -25,7 +26,6 @@ end
 group :development, :test do
   gem "minitest-rails-capybara"
   gem "pry", :require => "pry"
-  gem 'webmock'
   gem 'vcr'
   gem 'minitest-vcr'
 end
