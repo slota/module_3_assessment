@@ -1,4 +1,11 @@
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
 <% if @products %>
+  <h4>Your search returned <%= @products.count %> products</h4>
   <% @products.each do |product| %>
     <br>
     ID: <%= product.sku %>

@@ -29,3 +29,7 @@ group :development, :test do
   gem 'vcr'
   gem 'minitest-vcr'
 end
+
+group :test do
+  gem 'webmock'
+end

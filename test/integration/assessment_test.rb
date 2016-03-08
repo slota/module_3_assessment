@@ -9,11 +9,11 @@ class AssessmentTest <  ActionDispatch::IntegrationTest
     visit '/'
     assert_equal 200, page.status_code
 
-    fill_in "search", with: "sennheiser"
-    click_on("submit")
+    fill_in "q", with: "sennheiser"
+    click_on("Search")
 
-    current_path.should == '/search'
-    assert page.has_content?("sku")
+    assert_equal current_path, search_path
+    assert page.has_content?("Your search returned 15 products")
     assert page.has_content?("name")
     assert page.has_content?("customer average review")
     assert page.has_content?("description")

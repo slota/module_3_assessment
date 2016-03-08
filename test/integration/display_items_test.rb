@@ -7,6 +7,7 @@ class DisplaysItemsTest < ActionDispatch::IntegrationTest
   end
 
   def test_it_reaches_the_root_page
+    skip
     visit '/'
     assert_equal 200, page.status_code
 
