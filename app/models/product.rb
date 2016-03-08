@@ -1,4 +1,5 @@
 class Product
+  attr_reader :sku, :name, :customer_review_average, :description, :sale_price, :image
   def self.all
     response = BestBuyService.new
     products = response.get_products["products"]
@@ -10,6 +11,9 @@ class Product
   def initialize(product)
     @sku = product["sku"]
     @name = product["name"]
-    binding.pry
+    @customer_review_average = product["customerReviewAverage"]
+    @description = product["shortDescription"]
+    @sale_price = product["salePrice"]
+    @image = product["image"]
   end
 end

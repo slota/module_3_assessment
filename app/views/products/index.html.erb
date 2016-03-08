@@ -1,0 +1,14 @@
+<% if @products %>
+  <% @products.each do |product| %>
+    <br>
+    ID: <%= product.sku %>
+    <br>
+    Name: <%= product.name %>
+    <br>
+    Description: <%= product.description %>
+    <br>
+    Average Rating: <%= product.customer_review_average %>
+    <br>
+    <%= image_tag(product.image) %>
+  <% end %>
+<% end %>

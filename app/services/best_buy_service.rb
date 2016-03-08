@@ -6,7 +6,6 @@ class BestBuyService
   end
 
   def get_products
-    binding.pry
-    JSON.parse(connection.get("?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&pageSize=15&page=5&apiKey=r57cg7bzeza9xmw2ya3cp6ju&format=json").body)
+    JSON.parse(connection.get("?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&pageSize=15&page=5&apiKey=#{ENV["BEST_BUY_KEY"]}&format=json").body)
   end
 end
