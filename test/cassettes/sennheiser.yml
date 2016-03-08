@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.bestbuy.com/v1/products(longDescription=sennheiser*)?apiKey=r57cg7bzeza9xmw2ya3cp6ju&format=json&page=5&pageSize=15&show=sku,name,customerReviewAverage,shortDescription,salePrice,image
+    uri: http://api.bestbuy.com/v1/products(longDescription%20in(sennheiser*))?apiKey=r57cg7bzeza9xmw2ya3cp6ju&format=json&show=sku,name,customerReviewAverage,shortDescription,salePrice,image
     body:
       encoding: US-ASCII
       string: ''
@@ -23,149 +23,109 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '7136'
+      - '5148'
       Server:
       - thin 1.6.1 codename Death Proof
       Date:
-      - Tue, 08 Mar 2016 17:54:52 GMT
+      - Tue, 08 Mar 2016 18:34:14 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: |-
         {
-          "from": 61,
-          "to": 75,
+          "from": 1,
+          "to": 10,
           "total": 131,
-          "currentPage": 5,
-          "totalPages": 9,
-          "queryTime": "0.015",
-          "totalTime": "0.054",
+          "currentPage": 1,
+          "totalPages": 14,
+          "queryTime": "0.003",
+          "totalTime": "0.138",
           "partial": false,
-          "canonicalUrl": "/v1/products(longDescription=\"sennheiser*\")?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&page=5&format=json&apiKey=r57cg7bzeza9xmw2ya3cp6ju",
+          "canonicalUrl": "/v1/products(longDescription in(\"sennheiser*\"))?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&format=json&apiKey=r57cg7bzeza9xmw2ya3cp6ju",
           "products": [
             {
-              "sku": 4434003,
-              "name": "Sennheiser - MOMENTUM Earbud Headphones - Black Chrome",
+              "sku": 9678429,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 626-668MHz frequency range",
+              "salePrice": 629.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678429_sa.jpg"
+            },
+            {
+              "sku": 9678447,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 566-608MHz frequency range",
+              "salePrice": 629.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678447_sa.jpg"
+            },
+            {
+              "sku": 6131454,
+              "name": "Sennheiser - CH 650 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 650 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphone amplifiers; oxygen-free copper cables; gold-plated contacts; 4pole XLR with 2 mini plugs",
+              "salePrice": 239.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/6131/6131454_sa.jpg"
+            },
+            {
+              "sku": 6131463,
+              "name": "Sennheiser - CH 700 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 700 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with two 2.5mm jacks",
+              "salePrice": 319.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131463_rc.jpg"
+            },
+            {
+              "sku": 6131445,
+              "name": "Sennheiser - CH 800 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 800 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with 2 ODU connectors",
+              "salePrice": 379.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131445_rc.jpg"
+            },
+            {
+              "sku": 9678438,
+              "name": "Sennheiser - Connection Cable for Sennheiser MKE 600 Microphone",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Connection Cable for Sennheiser MKE 600 Microphone: Connects Sennheiser MKE 600 microphone to most smartphones; XLR-3 connector-to-3.5mm jack plug; coiled cable",
+              "salePrice": 19.95,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9678/9678438_sa.jpg"
+            },
+            {
+              "sku": 9068146,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - Black",
               "customerReviewAverage": "5.0",
-              "shortDescription": "Stainless steel acoustic pipes; sound isolating; dynamic speaker system; 3-button in-line remote; in-line microphone; tangle-free cable; includes carrying case",
-              "salePrice": 99.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4434/4434003_sa.jpg"
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068146_sa.jpg"
             },
             {
-              "sku": 4433401,
-              "name": "Sennheiser - MOMENTUM Earbud Headphones - Black Chrome",
-              "customerReviewAverage": "4.6",
-              "shortDescription": "Proprietary transducer technology; sound isolation; noise cancellation; stainless steel acoustic pipes; 3-button in-line remote and microphone for Apple&#174; iOS devices; tangle-resistant cable",
-              "salePrice": 99.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4433/4433401_sa.jpg"
-            },
-            {
-              "sku": 9068301,
-              "name": "Sennheiser - MOMENTUM Earbud Headphones - Multi",
-              "customerReviewAverage": "4.4",
-              "shortDescription": "SENNHEISER MOMENTUM Earbud Headphones: Custom-machined stainless-steel acoustic pipe; dynamic speaker system; 3-button in-line remote with integrated microphone; 2-tone, elliptical cable; includes 4 sizes of ear adapters",
-              "salePrice": 99.95,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068301_sa.jpg"
-            },
-            {
-              "sku": 9068329,
-              "name": "Sennheiser - MOMENTUM Earbud Headphones - Multi",
-              "customerReviewAverage": "4.8",
-              "shortDescription": "SENNHEISER MOMENTUM Earbud Headphones: Ambient noise attenuation; dynamic transducers; custom-machined stainless-steel acoustic pipe; 3-button in-line remote with integrated omnidirectional microphone; 4 ear adapter sizes; 4.3' elliptical cable",
-              "salePrice": 99.95,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068329_sa.jpg"
-            },
-            {
-              "sku": 3427044,
-              "name": "Sennheiser - Over-the-Ear Accessory Headphones for RS-165 Headphone Systems - Black",
+              "sku": 9068191,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - White",
               "customerReviewAverage": null,
-              "shortDescription": "Sound isolating; dynamic drivers and neodymium magnets; up to 18 hours of use between charges",
-              "salePrice": 139.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427044_sa.jpg"
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068191_sa.jpg"
             },
             {
-              "sku": 3427035,
-              "name": "Sennheiser - Over-the-Ear Accessory Headphones for RS-175 Headphone Systems - Black",
-              "customerReviewAverage": null,
-              "shortDescription": "Sound isolating; dynamic drivers and neodymium magnets; up to 18 hours of use between charges",
-              "salePrice": 169.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427035_sa.jpg"
+              "sku": 9068164,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - Black",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068164_sa.jpg"
             },
             {
-              "sku": 3427053,
-              "name": "Sennheiser - Over-the-Ear Accessory Headphones for RS-185 Headphone Systems - Black",
-              "customerReviewAverage": "2.0",
-              "shortDescription": "Dynamic open drivers and neodymium magnets; up to 18 hours of use between charges",
-              "salePrice": 199.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427053_sa.jpg"
-            },
-            {
-              "sku": 5660151,
-              "name": "Sennheiser - Over-the-Ear Gaming Headset - Black",
+              "sku": 9068155,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - White",
               "customerReviewAverage": "1.0",
-              "shortDescription": "From our expanded online assortment; noise-canceling microphone; game and chat controls; open acoustic ear cups; sound isolating; 16mm drivers; neodymium magnets",
-              "salePrice": 59.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/5660/5660151_sa.jpg"
-            },
-            {
-              "sku": 3427026,
-              "name": "Sennheiser - Over-the-Ear Headphone System - Black",
-              "customerReviewAverage": "5.0",
-              "shortDescription": "Up to 98' wireless range; sound isolating; dynamic drivers with neodymium magnets; adjustable headband; includes multireceiver transmitter with support for up to 2 pair of headphones simultaneously",
-              "salePrice": 219.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3427/3427026_sa.jpg"
-            },
-            {
-              "sku": 4555900,
-              "name": "Sennheiser - Over-the-Ear Headphones - Black",
-              "customerReviewAverage": null,
-              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; detachable cable with in-line remote and microphone; optimized for Android devices",
-              "salePrice": 109.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555900_sa.jpg"
-            },
-            {
-              "sku": 4555600,
-              "name": "Sennheiser - Over-the-Ear Headphones - Black",
-              "customerReviewAverage": null,
-              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; in-line remote and microphone; optimized for Android devices",
-              "salePrice": 89.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555600_sa.jpg"
-            },
-            {
-              "sku": 4555700,
-              "name": "Sennheiser - Over-the-Ear Headphones - Black",
-              "customerReviewAverage": null,
-              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; detachable cable with in-line remote and microphone; optimized for Apple&#174; iOS devices",
-              "salePrice": 109.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555700_sa.jpg"
-            },
-            {
-              "sku": 4555500,
-              "name": "Sennheiser - Over-the-Ear Headphones - Black",
-              "customerReviewAverage": null,
-              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Transducer technology; sound isolating; neodymium magnets; in-line remote and microphone; optimized for Apple&#174; iOS devices",
-              "salePrice": 89.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4555/4555500_sa.jpg"
-            },
-            {
-              "sku": 1700568,
-              "name": "Sennheiser - Over-the-Ear Headphones - Brown",
-              "customerReviewAverage": "4.5",
-              "shortDescription": "From our expanded online assortment; E.A.R. technology; twist-n-lock cable; DuoFol diaphragms; neodymium ferrous magnets",
-              "salePrice": 153.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1700/1700568_sa.jpg"
-            },
-            {
-              "sku": 4315300,
-              "name": "Sennheiser - Over-the-Ear Headphones - Silver/Black",
-              "customerReviewAverage": null,
-              "shortDescription": "SENNHEISER Over-the-Ear Headphones: Sound isolating; dynamic transducers; bass dial; integrated earcup controls; adjustable headband; microphone; folding design",
-              "salePrice": 499.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4315/4315300_sa.jpg"
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068155_sa.jpg"
             }
           ]
         }
     http_version: 
-  recorded_at: Tue, 08 Mar 2016 17:54:55 GMT
+  recorded_at: Tue, 08 Mar 2016 18:34:14 GMT
 recorded_with: VCR 3.0.1
