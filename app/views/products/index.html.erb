@@ -7,15 +7,17 @@
 <% if @products %>
   <h4>Your search returned <%= @products.count %> products</h4>
   <% @products.each do |product| %>
-    <br>
-    ID: <%= product.sku %>
-    <br>
-    Name: <%= product.name %>
-    <br>
-    Description: <%= product.description %>
-    <br>
-    Average Rating: <%= product.customer_review_average %>
-    <br>
-    <%= image_tag(product.image) %>
+    <div class=product-<%="#{product.sku}"%>>
+      <br>
+      ID: <%= product.sku %>
+      <br>
+      Name: <%= product.name %>
+      <br>
+      Description: <%= product.description %>
+      <br>
+      Average Rating: <%= product.customer_review_average %>
+      <br>
+      <%= image_tag(product.image) %>
+    </div>
   <% end %>
 <% end %>

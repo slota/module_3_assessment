@@ -5,7 +5,7 @@ class AssessmentTest <  ActionDispatch::IntegrationTest
     Capybara.app = Storedom::Application
   end
 
-  def test_it_reaches_the_root_page
+  def test_it_searches_sennheiser
     visit '/'
     assert_equal 200, page.status_code
 
@@ -13,11 +13,31 @@ class AssessmentTest <  ActionDispatch::IntegrationTest
     click_on("Search")
 
     assert_equal current_path, search_path
+
     assert page.has_content?("Your search returned 15 products")
-    assert page.has_content?("name")
-    assert page.has_content?("customer average review")
-    assert page.has_content?("description")
-    assert page.has_content?("sale price")
-    assert page.has_content?("image")
+    within('.product-4434003') do
+      assert page.has_content?("4434003")
+      assert page.has_content?("Sennheiser")
+      assert page.has_content?("Stainless steel")
+      assert page.has_content?("5")
+    end
+  end
+
+  def test_it_searches_sennheiser_headphones_white
+    visit '/'
+    assert_equal 200, page.status_code
+
+    fill_in "q", with: "sennheiser headphones white"
+    click_on("Search")
+
+    assert_equal current_path, search_path
+
+    assert page.has_content?("Your search returned 15 products")
+    within('.product-4434003') do
+      assert page.has_content?("4434003")
+      assert page.has_content?("Sennheiser")
+      assert page.has_content?("Stainless steel")
+      assert page.has_content?("5")
+    end
   end
 end
